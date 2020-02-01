@@ -7,9 +7,9 @@ A data exploration and visualisation project that produces appealing, crystal an
 The shiny app produces an interactive webpage. Thee left panel shows the selection panel of the types of the coral reefs. On the right, the top upper half shows the bleaching trend in all the possible locations the selected the coral reef appears over the last 7-8 years. The bottom half shows the location of the coral reef and shows the color coding which shows the severity of the bleaching of the selected coral reef across all the locations. 
 
 
-![doc_image](https://github.com/girish1993/Car-Insurance-analsysis/blob/master/doc_images/img.png)
+![doc_image](https://github.com/girish1993/Victoria-Coral-Bleaching-Visualisation-R-shiny-App/blob/master/docs/1.png)
 
-![doc_image](https://github.com/girish1993/Car-Insurance-analsysis/blob/master/doc_images/img.png)
+![doc_image](https://github.com/girish1993/Victoria-Coral-Bleaching-Visualisation-R-shiny-App/blob/master/docs/2.png)
 
 <hr />
 
