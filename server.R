@@ -8,7 +8,7 @@ shinyServer(function(input, output) {
   output$distPlot <- renderPlot({
     
     # reading the contents of the file
-    coral_data <- read.csv("assignment-02-data-formated.csv")
+    coral_data <- read.csv("vic_coral_data.csv")
     coral_data$value <- as.numeric(sub("%", "", as.character(coral_data$value)))
     plotFacet <- function(coral_type,smoothening){
       new_coral <- coral_data[order(coral_data$latitude),]
@@ -23,7 +23,7 @@ shinyServer(function(input, output) {
   
   #rendering the map output
   output$myMap <- renderLeaflet({
-    coral_data <- read.csv("assignment-02-data-formated.csv")
+    coral_data <- read.csv("vic_coral_data.csv")
     coral_data$value <- as.numeric(sub("%", "", as.character(coral_data$value)))
     getColor <- function(coral_data) {
       agg_result <- data.frame(aggregate(coral_data$value,by = list(coral_data$location),FUN = mean,na.rm = TRUE))
